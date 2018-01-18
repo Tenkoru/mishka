@@ -6,9 +6,9 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-  <header class="main-header">
+  <header class="page-header">
     <a class="logo" href="#">
-      <img class="logo-image" src="http://placehold.it/86x35" alt="Заголовок">
+      <img class="logo__image" src="http://placehold.it/86x35" alt="Заголовок">
     </a>
     <nav class="main-nav">
       <ul class="main-nav__list">
@@ -30,13 +30,13 @@
       <h1 class="header-main__title">Милый штуки ручной работы для дома</h1>
     </div>
   </header>
-  <main>
+  <main class="main-content">
     <ul class="goods-list">
       <li class="goods-list__item">Предметы интерьера</li>
       <li class="goods-list__item">Детские игрушки</li>
     </ul>
     <div class="weekly-goods">
-      <h2 class="weekly-goods__header">Товар недели</h2>
+      <h2 class="weekly-goods__title">Товар недели</h2>
       <b class="weekly-goods__selected-goods">Вязаные корзинки</b>
       <p class="weekly-goods__description">
         Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
@@ -61,7 +61,7 @@
       <span class="weekly-goods__cost">
         Цена: 990 руб.
       </span>
-      <div class="weekly-goods__button button">Заказать</div>
+      <button type="button" class="weekly-goods__button button">Заказать</button>
     </div>
     <div class="advantages">
       <h2 class="advantages__header">Коротко о нас:</h2>
@@ -80,9 +80,9 @@
         <b class="feedback__author">Анастасия Красильникова</b>
         <span class="feedback__email">@misssssiskras</span>
       </div>
-      <div class="slider__button-left"></div>
-      <div class="slider__button-right"></div>
-      <div class="feedback__button button">Написать</div>
+      <button type="button" class="slider__button-left"></button>
+      <button type="button" class="slider__button-right"></button>
+      <a class="feedback__button button" href="#">Написать</a>
     </div>
     <div class="contacts">
       <h2 class="contacts__header">Контакты</h2>
@@ -102,20 +102,20 @@
         </tr>
       </table>
       <div class="map"></div>
-      <div class="contacts__button button">Напишите нам</div>
+      <a class="contacts__button button" href="#">Напишите нам</a>
     </div>
   </main>
-  <footer>
+  <footer class="page-footer">
     <div class="social">
       <ul class="social__list">
         <li>
-          <a class="social__button instagram" href="#"></a>
+          <a class="social__button social__button--instagram" href="#"></a>
         </li>
         <li>
-          <a class="social__button vkontakte" href="#"></a>
+          <a class="social__button social__button--vkontakte" href="#"></a>
         </li>
         <li>
-          <a class="social__button twitter" href="#"></a>
+          <a class="social__button social__button--twitter" href="#"></a>
         </li>
       </ul>
     </div>
