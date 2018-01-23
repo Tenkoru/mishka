@@ -26,16 +26,16 @@
         </li>
       </ul>
     </nav>
-    <div class="header-main">
-      <h1 class="header-main__title">Милый штуки ручной работы для дома</h1>
-    </div>
   </header>
   <main class="main-content">
+    <div class="main-content">
+      <h1 class="main-content__title">Милый штуки ручной работы для дома</h1>
+    </div>
     <ul class="goods-list">
       <li class="goods-list__item">Предметы интерьера</li>
       <li class="goods-list__item">Детские игрушки</li>
     </ul>
-    <div class="weekly-goods">
+    <section class="weekly-goods">
       <h2 class="weekly-goods__title">Товар недели</h2>
       <b class="weekly-goods__selected-goods">Вязаные корзинки</b>
       <p class="weekly-goods__description">
@@ -62,8 +62,8 @@
         Цена: 990 руб.
       </span>
       <button type="button" class="weekly-goods__button button">Заказать</button>
-    </div>
-    <div class="advantages">
+    </section>
+    <section class="advantages">
       <h2 class="advantages__header">Коротко о нас:</h2>
       <ul class="advantages__list">
         <li class="advantages__item">Экологически чистые материалы</li>
@@ -73,18 +73,21 @@
         <li class="advantages__item">Поддержка отечественного производителя</li>
         <li class="advantages__item">Поставляется в подарочной упаковке</li>
       </ul>
-    </div>
-    <div class="feedback">
-      <div class="feedback__block slider">
-        <p class="feedback__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-        <b class="feedback__author">Анастасия Красильникова</b>
-        <span class="feedback__email">@misssssiskras</span>
-      </div>
-      <button type="button" class="slider__button-left"></button>
-      <button type="button" class="slider__button-right"></button>
+    </section>
+    <section class="feedback">
+      <article class="feedback__block slider">
+        <blockquote class="feedback__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+        </blockquote>
+        <address class="feedback__adress">
+          <b class="feedback__author">Анастасия Красильникова</b>
+          <span class="feedback__email">@misssssiskras</span>
+        </address>
+      </article>
+      <button type="button" class="slider__button slider__button-left"></button>
+      <button type="button" class="slider__button slider__button-right"></button>
       <a class="feedback__button button" href="#">Написать</a>
-    </div>
-    <div class="contacts">
+    </section>
+    <section class="contacts">
       <h2 class="contacts__header">Контакты</h2>
       <table class="contacts__info">
         <tr>
@@ -103,7 +106,34 @@
       </table>
       <div class="map"></div>
       <a class="contacts__button button" href="#">Напишите нам</a>
-    </div>
+    </section>
+    <section class="modal-cart">
+      <form class="modal-cart__form">
+        <h3 class="modal-cart__header">Добавить в корзину</h3>
+        <span class="modal-cart__list-header">Выберете размер:</span>
+        <ul class="modal-cart__list">
+          <li>
+            <label class="modal-cart__size">S
+              <input type="radio" name="sizeS">
+              <div class="input-indicator"></div>
+            </label>
+          </li>
+          <li>
+            <label class="modal-cart__size">M
+              <input type="radio" name="sizeM">
+              <div class="input-indicator"></div>
+            </label>
+          </li>
+          <li>
+            <label class="modal-cart__size">L
+              <input type="radio" name="sizeL">
+              <div class="input-indicator"></div>
+            </label>
+          </li>
+        </ul>
+        <button class="modal-cart__submit button" type="submit">Добавить</button>
+      </form>
+    </section>
   </main>
   <footer class="page-footer">
     <div class="social">
