@@ -1,0 +1,10 @@
+.slider__buttons {
+  display: flex;
+}
+
+.slider__button {
+  width: 50%;
+  height: 50px;
+  border: 1px solid #ececec;
+  background-color: $color-white;
+}

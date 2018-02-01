@@ -1,0 +1,26 @@
+.main-content__header {
+  background-color: #f9f9f9;
+  background-image: url("../img/hero-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  border-bottom: 7px solid red;
+}
+
+.main-content__header-container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.main-content__title {
+  padding-top: 70px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0;
+  margin-bottom: 140px;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  color: $color-black;
+}

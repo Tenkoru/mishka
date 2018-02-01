@@ -1,0 +1,27 @@
+.contacts__container {
+  padding-top: 40px;
+}
+
+.contacts__header {
+  margin: 0;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $color-black;
+}
+
+.contacts__info {
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.contacts__email {
+  color: $color-grey;
+  text-decoration: none;
+  border-bottom: 1px solid $color-lightTeal;
+}
+
+.contacts__button {
+  margin-bottom: 40px;
+  margin-top: 40px;
+}

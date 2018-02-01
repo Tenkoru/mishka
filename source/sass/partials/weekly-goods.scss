@@ -1,0 +1,66 @@
+.weekly-goods {
+  border-bottom: 7px solid red;
+}
+
+.weekly-goods__container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 42px;
+}
+
+.weekly-goods__title {
+  margin: 0;
+}
+
+.weekly-goods__selected-goods {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $color-black;
+  order: 5;
+}
+
+.weekly-goods__title {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  color: $color-lightTeal;
+  text-transform: uppercase;
+  order: 10;
+}
+
+.weekly-goods__description {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.weekly-goods__info {
+  margin-bottom: 30px;
+  order: 15;
+}
+
+.weekly-goods__image-container {
+  order: 20;
+}
+
+.weekly-goods__cost {
+  order: 25;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.weekly-goods__button {
+  order: 30;
+}

@@ -1,37 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Вязание на заказ</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
   <header class="page-header">
-    <a class="logo" href="#">
-      <img class="logo__image" src="http://placehold.it/86x35" alt="Заголовок">
-    </a>
-    <nav class="main-nav">
-      <ul class="main-nav__list">
-        <li>
-          <a class="main-nav__item" href="#">Каталог товаров</a>
-        </li>
-        <li>
-          <a class="main-nav__item" href="#">Вязание на заказ</a>
-        </li>
-        <li>
-          <a class="main-nav__item main-nav__item--search" href="#">Поиска по сайту</a>
-        </li>
-        <li>
-          <a class="main-nav__item main-nav__item--cart" href="#">Корзина:</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="container">
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__list-container">
+            <a class="main-nav__item main-nav__item--logo" href="index.html">
+              <img class="logo" src="img/mishka-logo-mobile.png" alt="Логотип">
+            </a>
+            <button type="button" class="page-header__menu-btn"></button>
+          </li>
+          <li class="main-nav__list-container">
+            <a class="main-nav__item" href="#">Каталог товаров</a>
+          </li>
+          <li class="main-nav__list-container">
+            <a class="main-nav__item" href="#">Вязание на заказ</a>
+          </li>
+          <li class="main-nav__list-container">
+            <a class="main-nav__item main-nav__item--search" href="#">Поиска по сайту</a>
+          </li>
+          <li class="main-nav__list-container main-nav__list-container--last-item">
+            <a class="main-nav__item main-nav__item--cart" href="#">Корзина: <span class="main-nav__cart-content">Пока пуста</span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main class="main-content">
-    <h1 class="main-content__title">Вязание на заказ</h1>
-    <p class="page-description">
-      Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
-    </p>
+    <sect class="main-content__header">
+      <h1 class="main-content__title">Вязание на заказ</h1>
+      <p class="page-description">
+        Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+      </p>
+    </sect>
     <form class="to-order">
       <fieldset class="to-order__fieldset">
         <legend class="to-order__legend">Тип</legend>

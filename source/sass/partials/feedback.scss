@@ -1,0 +1,45 @@
+.feedback {
+  border-bottom: 5px solid red;
+}
+
+.feedback__container {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.feedback__header {
+  margin: 0;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.feedback__text {
+  margin: 30px 0;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+  color: $color-grey;
+}
+
+.feedback__author {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  color: $color-black;
+  font-style: normal;
+}
+
+.feedback__email {
+  display: block;
+  margin-top: 10px;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 35px;
+}
+
+.feedback__button {
+  margin-top: 38px;
+}

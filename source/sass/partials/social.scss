@@ -1,0 +1,8 @@
+.social {
+  height: 80px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.social__list {
+  @include simple-list;
+}

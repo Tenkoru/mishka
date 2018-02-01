@@ -1,0 +1,40 @@
+.advantages__container {
+  padding-bottom: 10px;
+  padding-top: 30px;
+}
+
+.advantages__list {
+  @include simple-list;
+}
+
+.advantages__header {
+  margin: 0;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $color-black;
+}
+
+.advantages__item {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  color: $color-black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 55px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 40px;
+    background-color: red;
+    top: 0;
+  }
+}
+
+
+
+

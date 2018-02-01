@@ -1,0 +1,44 @@
+.page-header__logo {
+  display: block;
+  text-align: center;
+  padding-top: 21px;
+  padding-bottom: 22px;
+}
+
+.page-header__menu-btn {
+  border: none;
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  background-color: $color-white;
+  position: absolute;
+  top: 50%;
+  right: 31px;
+  width: 20px;
+  height: 14px;
+  transform: translateY(-50%);
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: $color-black;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &:focus {
+    outline: 1px dotted $color-black;
+  }
+}
+
+.page-header__menu {
+  position: relative;
+}
+
+.page-header__container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
