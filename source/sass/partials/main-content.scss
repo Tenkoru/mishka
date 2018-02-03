@@ -29,4 +29,10 @@
   font-size: 27px;
   line-height: 30px;
   color: $color-black;
+
+  @media (min-width: $screen-tablet) {
+    padding-top: 150px;
+    font-size: 43px;
+    line-height: 50px;
+  }
 }

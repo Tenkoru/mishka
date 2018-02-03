@@ -2,6 +2,10 @@
   @include simple-list;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $screen-tablet) {
+    flex-direction: row;
+  }
 }
 
 .goods-list__item {
@@ -21,6 +25,10 @@
     right: 30px;
     top: 50%;
     transform: translateY(-50%);
+  }
+
+  @media (min-width: $screen-tablet) {
+    width: 50%;
   }
 }
 
