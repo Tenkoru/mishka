@@ -9,28 +9,30 @@
 </head>
 <body class="body">
   <header class="page-header">
-    <nav class="main-nav">
-      <ul class="main-nav__list">
-        <li class="main-nav__list-container">
-          <a class="main-nav__item main-nav__item--logo" href="index.html">
-            <img class="logo" src="img/mishka-logo-mobile.png" alt="Логотип">
-          </a>
-          <button type="button" class="page-header__menu-btn"></button>
-        </li>
-        <li class="main-nav__list-container">
-          <a class="main-nav__item" href="#">Каталог товаров</a>
-        </li>
-        <li class="main-nav__list-container">
-          <a class="main-nav__item" href="#">Вязание на заказ</a>
-        </li>
-        <li class="main-nav__list-container">
-          <a class="main-nav__item main-nav__item--search" href="#">Поиска по сайту</a>
-        </li>
-        <li class="main-nav__list-container">
-          <a class="main-nav__item main-nav__item--cart" href="#">Корзина: <span class="main-nav__cart-content">Пока пуста</span></a>
-        </li>
-      </ul>
-    </nav>
+    <div class="page-header__container container">
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__list-container main-nav__list-container--logo">
+            <a class="main-nav__item main-nav__item--logo" href="index.html">
+              <img class="logo" src="img/mishka-logo-mobile.png" alt="Логотип">
+            </a>
+            <button type="button" class="page-header__menu-btn"></button>
+          </li>
+          <li class="main-nav__list-container main-nav__list-container--catalog">
+            <a class="main-nav__item main-nav__item--catalog" href="#">Каталог товаров</a>
+          </li>
+          <li class="main-nav__list-container main-nav__list-container--to-order">
+            <a class="main-nav__item main-nav__item--to-order" href="#">Вязание на заказ</a>
+          </li>
+          <li class="main-nav__list-container main-nav__list-container--search">
+            <a class="main-nav__item main-nav__item--search" href="#">Поиска по сайту</a>
+          </li>
+          <li class="main-nav__list-container main-nav__list-container--cart">
+            <a class="main-nav__item main-nav__item--cart" href="#">Корзина: <span class="main-nav__cart-content">Пока пуста</span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main class="main-content">
     <section class="main-content__header">

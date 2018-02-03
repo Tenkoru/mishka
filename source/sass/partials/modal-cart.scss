@@ -1,6 +1,7 @@
 .modal-cart {
   border-top: 1px solid #c7c7c7;
   border-bottom: 1px solid #c7c7c7;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
 .modal-cart__container {
@@ -42,7 +43,7 @@
   font-size: 17px;
   line-height: 16px;
   font-weight: 700;
-  border: 1px solid #ececec;
+  border: 2px solid #ececec;
   padding-top: 16px;
   padding-bottom: 16px;
 }
