@@ -30,6 +30,15 @@
           <li class="main-nav__list-container main-nav__list-container--cart">
             <a class="main-nav__item main-nav__item--cart" href="#">Корзина: <span class="main-nav__cart-content">Пока пуста</span></a>
           </li>
+          <li class="main-nav__list-container main-nav__list-container--new">
+            <a class="main-nav__item main-nav__item--new" href="#">Новые поступления</a>
+          </li>
+          <li class="main-nav__list-container main-nav__list-container--sale">
+            <a class="main-nav__item main-nav__item--sale" href="#">Распродажа</a>
+          </li>
+          <li class="main-nav__list-container main-nav__list-container--free-shipping">
+            <a class="main-nav__item main-nav__item--free-shipping" href="#">Бесплатная доставка по России</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -140,19 +149,19 @@
           <ul class="modal-cart__list">
             <li class="modal-cart__list-container">
               <label class="modal-cart__size">S
-                <input class="input input--hidden" type="radio" name="sizeS" checked>
+                <input class="input input--hidden" type="radio" name="modal-cart-size" value="sizeS" checked>
                 <div class="input-indicator"></div>
               </label>
             </li>
             <li class="modal-cart__list-container">
               <label class="modal-cart__size">M
-                <input class="input input--hidden" type="radio" name="sizeM">
+                <input class="input input--hidden" type="radio" name="modal-cart-size" value="sizeM">
                 <div class="input-indicator"></div>
               </label>
             </li>
             <li class="modal-cart__list-container">
               <label class="modal-cart__size">L
-                <input class="input input--hidden" type="radio" name="sizeL">
+                <input class="input input--hidden" type="radio" name="modal-cart-size" value="sizeL">
                 <div class="input-indicator"></div>
               </label>
             </li>
