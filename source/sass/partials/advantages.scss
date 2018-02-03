@@ -1,18 +1,31 @@
 .advantages__container {
   padding-bottom: 10px;
   padding-top: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .advantages__list {
   @include simple-list;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $screen-tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .advantages__header {
   margin: 0;
   font-size: 25px;
-  line-height: 30px;
   font-weight: 700;
   color: $color-black;
+  margin-bottom: 20px;
+
+  @media (min-width: $screen-tablet) {
+    font-size: 53px;
+  }
 }
 
 .advantages__item {
@@ -32,6 +45,10 @@
     height: 40px;
     background-color: red;
     top: 0;
+  }
+
+  @media (min-width: $screen-tablet) {
+    flex-basis: 50%;
   }
 }
 
