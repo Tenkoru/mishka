@@ -1,6 +1,10 @@
 .table-parameters {
   width: 260px;
   border-collapse: collapse;
+
+  @media (min-width: $screen-tablet) {
+    width: 290px;
+  }
 }
 
 .table-parameters__row {
