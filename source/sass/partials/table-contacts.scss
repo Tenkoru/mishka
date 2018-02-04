@@ -2,6 +2,14 @@
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
+  display: flexbox;
+  flex-direction: column;
+}
+
+.table-contacts__row {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .table-contacts__data {
@@ -10,4 +18,8 @@
 
 .table-contacts__data--key {
   width: 75px;
+}
+
+.table-contacts__data--value {
+  flex-basis: 55%;
 }
