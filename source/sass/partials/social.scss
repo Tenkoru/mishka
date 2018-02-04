@@ -1,8 +1,18 @@
 .social {
-  height: 80px;
   border-bottom: 1px solid #e5e5e5;
+  padding-top: 24px;
+  padding-right: 59px;
+  padding-bottom: 27px;
+  padding-left: 59px;
+  background-color: red;
+
+  @media (min-width: $screen-tablet) {
+    padding: 0;
+  }
 }
 
 .social__list {
   @include simple-list;
 }
+
+

@@ -1,6 +1,10 @@
 .copyrights {
   padding-top: 22px;
   padding-bottom: 23px;
+
+  @media (min-width: $screen-tablet) {
+    padding: 0;
+  }
 }
 
 .copyrights__cite {

@@ -3,6 +3,13 @@
   padding-top: 30px;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $screen-tablet) {
+    padding-top: 55px;
+    margin-bottom: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .advantages__list {
@@ -11,8 +18,9 @@
   flex-direction: column;
 
   @media (min-width: $screen-tablet) {
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
+    flex-basis: 50%;
   }
 }
 
@@ -25,6 +33,7 @@
 
   @media (min-width: $screen-tablet) {
     font-size: 53px;
+    flex-basis: 100%;
   }
 }
 
@@ -48,7 +57,6 @@
   }
 
   @media (min-width: $screen-tablet) {
-    flex-basis: 50%;
     font-size: 20px;
     line-height: 22px;
   }

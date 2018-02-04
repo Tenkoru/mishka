@@ -5,10 +5,16 @@
 .page-footer__container {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $screen-tablet) {
+    flex-direction: row;
+    padding-top: 50px;
+    justify-content: space-between;
+  }
 }
 
 .page-footer__logo {
-  @media (max-width: $screen-desktop) {
+  @media (max-width: $screen-tablet) {
     display: none;
   }
 }

@@ -6,11 +6,13 @@
   display: flex;
   flex-direction: column;
   padding-top: 30px;
-  padding-bottom: 42px;
+  padding-bottom: 35px;
 
   @media (min-width: $screen-tablet) {
     flex-direction: row;
     flex-wrap: wrap;
+    padding-top: 55px;
+    padding-bottom: 52px;
   }
 }
 
