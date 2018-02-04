@@ -1,5 +1,28 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
+
 .contacts__container {
   padding-top: 40px;
+  position: relative;
+
+  @media (min-width: $screen-tablet) {
+    padding-top: 65px;
+  }
+
+  &::before {
+    @media (min-width: $screen-tablet) {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 50px;
+      height: 81px;
+      background-color: red;
+      right: 0;
+      top: 45px;
+    }
+  }
 }
 
 .contacts__header {
@@ -8,11 +31,16 @@
   line-height: 30px;
   font-weight: 700;
   color: $color-black;
+
+  @media (min-width: $screen-tablet) {
+    font-size: 43px;
+    line-height: 50px;
+  }
 }
 
 .contacts__info {
-  padding-bottom: 20px;
-  padding-top: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .contacts__email {
@@ -24,4 +52,14 @@
 .contacts__button {
   margin-bottom: 40px;
   margin-top: 40px;
+  align-self: center;
+  @media (max-width: $screen-tablet) {
+    padding-left: 54px;
+    padding-right: 54px;
+  }
+
+  @media (min-width: $screen-tablet) {
+    margin-top: 55px;
+    margin-bottom: 55px;
+  }
 }

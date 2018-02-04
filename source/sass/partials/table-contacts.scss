@@ -2,18 +2,31 @@
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
-  display: flexbox;
+  display: flex;
   flex-direction: column;
+
+  @media (min-width: $screen-tablet) {
+    flex-direction: row;
+  }
 }
 
 .table-contacts__row {
   display: flex;
   margin-top: 20px;
   margin-bottom: 20px;
+
+  @media (min-width: $screen-tablet) {
+    flex-basis: 50%;
+  }
 }
 
 .table-contacts__data {
   vertical-align: top;
+
+  @media (min-width: $screen-tablet) {
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 
 .table-contacts__data--key {

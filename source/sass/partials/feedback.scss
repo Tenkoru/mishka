@@ -1,5 +1,11 @@
 .feedback {
   border-bottom: 5px solid red;
+
+  @media (min-width: $screen-tablet) {
+    background-image: url("../img/review.jpg");
+    background-repeat: no-repeat;
+    padding-bottom: 70px;
+  }
 }
 
 .feedback__container {
@@ -11,6 +17,8 @@
   @media (min-width: $screen-tablet) {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 80px;
   }
 }
 
@@ -21,10 +29,6 @@
   font-weight: 700;
   color: $color-black;
   order: 10;
-
-  @media (min-width: $screen-tablet) {
-    flex-basis: 74%;
-  }
 }
 
 .feedback__block {
@@ -82,7 +86,6 @@
 
   @media (min-width: $screen-tablet) {
     order: 20;
-    flex-basis: 25%;
     margin-top: 0;
   }
 }
