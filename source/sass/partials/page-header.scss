@@ -3,12 +3,19 @@
   border-bottom: 1px solid #ececec;
 }
 
-.page-header__logo {
-  display: block;
-  text-align: center;
-  padding-top: 21px;
-  padding-bottom: 22px;
+.page-header__container {
+  width: auto;
+
+  @media (min-width: $screen-tablet) {
+    width: $container-tablet;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: $container-desktop;
+  }
 }
+
+
 
 .page-header__menu-btn {
   border: none;
@@ -46,11 +53,5 @@
   position: relative;
 }
 
-.page-header__container {
-  width: auto;
 
-  @media (min-width: $screen-tablet) {
-    width: $container-tablet;
-  }
-}
 
