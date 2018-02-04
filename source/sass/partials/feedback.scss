@@ -5,6 +5,13 @@
 .feedback__container {
   padding-top: 30px;
   padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $screen-tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .feedback__header {
@@ -12,6 +19,25 @@
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
+  order: 10;
+
+  @media (min-width: $screen-tablet) {
+    flex-basis: 74%;
+  }
+}
+
+.feedback__block {
+  order: 20;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $screen-tablet) {
+    order: 30;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 }
 
 .feedback__text {
@@ -20,6 +46,10 @@
   line-height: 30px;
   font-weight: 400;
   color: $color-grey;
+
+  @media (min-width: $screen-tablet) {
+    flex-basis: 95%;
+  }
 }
 
 .feedback__author {
@@ -28,6 +58,11 @@
   font-weight: 700;
   color: $color-black;
   font-style: normal;
+
+  @media (min-width: $screen-tablet) {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 .feedback__email {
@@ -42,4 +77,11 @@
 
 .feedback__button {
   margin-top: 38px;
+  order: 30;
+
+  @media (min-width: $screen-tablet) {
+    order: 20;
+    flex-basis: 25%;
+    margin-top: 0;
+  }
 }

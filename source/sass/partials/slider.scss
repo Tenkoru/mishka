@@ -1,5 +1,10 @@
 .slider__buttons {
   display: flex;
+  @media (min-width: $screen-tablet) {
+  border: 1px solid red;
+  flex-basis: 167px;
+}
+
 }
 
 .slider__button {
@@ -7,4 +12,6 @@
   height: 50px;
   border: 1px solid #ececec;
   background-color: $color-white;
+  padding: 0;
+  margin: 0;
 }
