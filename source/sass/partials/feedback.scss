@@ -4,7 +4,10 @@
   @media (min-width: $screen-tablet) {
     background-image: url("../img/review.jpg");
     background-repeat: no-repeat;
-    padding-bottom: 70px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    background: none;
   }
 }
 
@@ -19,6 +22,16 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 80px;
+    padding-bottom: 50px;
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: 875px;
+    padding-bottom: 100px;
+    padding-left: 175px;
+    background-image: url("../img/review.jpg");
+    background-repeat: no-repeat;
   }
 }
 
@@ -29,6 +42,16 @@
   font-weight: 700;
   color: $color-black;
   order: 10;
+
+  @media (min-width: $screen-tablet) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $screen-tablet) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .feedback__block {
@@ -87,5 +110,7 @@
   @media (min-width: $screen-tablet) {
     order: 20;
     margin-top: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }

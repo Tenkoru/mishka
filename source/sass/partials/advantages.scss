@@ -1,14 +1,20 @@
 .advantages__container {
-  padding-bottom: 10px;
   padding-top: 30px;
   display: flex;
   flex-direction: column;
 
   @media (min-width: $screen-tablet) {
     padding-top: 55px;
-    margin-bottom: 50px;
+    padding-bottom: 80px;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: 875px;
+    padding-top: 65px;
+    padding-bottom: 90px;
+    padding-left: 175px;
   }
 }
 
@@ -22,6 +28,10 @@
     flex-wrap: wrap;
     flex-basis: 50%;
   }
+
+  @media (min-width: $screen-desktop) {
+    flex-basis: 350px;
+  }
 }
 
 .advantages__header {
@@ -33,6 +43,7 @@
 
   @media (min-width: $screen-tablet) {
     font-size: 53px;
+    line-height: 57px;
     flex-basis: 100%;
   }
 }

@@ -8,6 +8,10 @@
   @media (min-width: $screen-tablet) {
     flex-direction: row;
   }
+
+  @media (min-width: $screen-desktop) {
+    flex-direction: column;
+  }
 }
 
 .table-contacts__row {
@@ -17,6 +21,10 @@
 
   @media (min-width: $screen-tablet) {
     flex-basis: 50%;
+  }
+
+  @media (min-width: $screen-desktop) {
+    flex-basis: auto;
   }
 }
 

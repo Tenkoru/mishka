@@ -1,6 +1,12 @@
 .map {
   height: 460px;
+  background-color: #000;
   background-image: url("../img/map-demo.jpg");
   background-repeat: no-repeat;
   background-position: 50% 0;
+
+  @media (min-width: $screen-desktop) {
+    width: 525px;
+    order: 20;
+  }
 }

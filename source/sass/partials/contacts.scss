@@ -1,11 +1,8 @@
-.contacts {
-  display: flex;
-  flex-direction: column;
-}
-
 .contacts__container {
   padding-top: 40px;
   position: relative;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: $screen-tablet) {
     padding-top: 65px;
@@ -22,6 +19,20 @@
       right: 0;
       top: 45px;
     }
+
+    @media (min-width: $screen-desktop) {
+      left: 63px;
+      top: 133px;
+    }
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: 875px;
+    padding-left: 175px;
+    padding-top: 70px;
+    padding-bottom: 105px;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
@@ -35,12 +46,33 @@
   @media (min-width: $screen-tablet) {
     font-size: 43px;
     line-height: 50px;
+    flex-basis: 100%;
+  }
+
+  @media (min-width: $screen-desktop) {
+    font-size: 50px;
+    line-height: 57px;
   }
 }
 
 .contacts__info {
   margin-bottom: 20px;
   margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $screen-tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $screen-desktop) {
+    order: 10;
+    flex-basis: 300px;
+    margin-top: 80px;
+    padding-right: 50px;
+    align-content: flex-start;
+  }
 }
 
 .contacts__email {
@@ -54,12 +86,21 @@
   margin-top: 40px;
   align-self: center;
   @media (max-width: $screen-tablet) {
-    padding-left: 54px;
-    padding-right: 54px;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   @media (min-width: $screen-tablet) {
     margin-top: 55px;
     margin-bottom: 55px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    order: 50;
+    margin-top: -50px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    margin-bottom: 0;
   }
 }
