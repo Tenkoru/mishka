@@ -202,12 +202,17 @@
 
   @media (min-width: $screen-desktop) {
     text-align: left;
+    font-size: 17px;
   }
 }
 
 .main-nav__item--to-order {
   @media (min-width: $screen-tablet) {
     font-size: 15px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    font-size: 17px;
   }
 }
 
