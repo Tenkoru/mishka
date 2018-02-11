@@ -2,6 +2,17 @@
   display: flex;
   flex-direction: column;
   position: relative;
+
+  @media (min-width: $screen-tablet) {
+    flex-direction: row;
+    min-height: 88px;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: $screen-desktop) {
+    justify-content: space-between;
+  }
+
 }
 
 .main-nav__list {
@@ -16,16 +27,31 @@
     display: flex;
     position: relative;
     justify-content: space-between;
+    flex-basis: 325px;
+    z-index: 0;
   }
 
   @media (min-width: $screen-desktop) {
     justify-content: normal;
+    flex-basis: auto;
   }
 }
 
 .main-nav__logo {
   border-bottom: 1px solid #ececec;
   position: relative;
+
+  @media (min-width: $screen-tablet) {
+    flex-grow: 1;
+    border-bottom: none;
+  }
+
+  @media (min-width: $screen-desktop) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+  }
 }
 
 .main-nav__list-container {
@@ -38,6 +64,11 @@
 
   @media (min-width: $screen-tablet) {
     border-bottom: none;
+  }
+
+  @media (min-width: $screen-desktop) {
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -92,7 +123,10 @@
     transform: translateY(-50%);
   }
   @media (min-width: $screen-tablet) {
-    width: 315px;
+    width: 185px;
+    padding-left: 79px;
+    display: flex;
+    align-items: center;
   }
 
   @media (min-width: $screen-desktop) {
@@ -106,14 +140,15 @@
   order: 4;
   @media (min-width: $screen-tablet) {
     position: absolute;
-    bottom: -60px;
+    bottom: -50%;
+    left: -100%;
   }
 
   @media (min-width: $screen-desktop) {
     order: 1;
     position: static;
     border-right: 1px solid #ececec;
-    flex-basis: 185px;
+    flex-basis: 184px;
   }
 }
 
@@ -121,14 +156,18 @@
   order: 5;
   @media (min-width: $screen-tablet) {
     position: absolute;
-    bottom: -60px;
-    left: 170px;
+    bottom: -50%;
+    left: -50%;
   }
 
   @media (min-width: $screen-desktop) {
     order: 2;
     position: static;
     flex-basis: 216px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    margin-right: auto;
   }
 }
 
@@ -139,7 +178,8 @@
   @media (min-width: $screen-desktop) {
     display: block;
     position: absolute;
-    top: 80px;
+    bottom: -50%;
+    left: 0;
   }
 }
 
@@ -150,8 +190,8 @@
   @media (min-width: $screen-desktop) {
     display: block;
     position: absolute;
-    top: 80px;
-    left: 220px;
+    bottom: -50%;
+    left: 21%;
   }
 }
 
@@ -160,7 +200,7 @@
   @media (min-width: $screen-tablet) {
     display: block;
     position: absolute;
-    bottom: -60px;
+    bottom: -50%;
     right: 0px;
     order: 8;
   }
@@ -217,14 +257,13 @@
 .main-nav__item--cart {
   @media (min-width: $screen-tablet) {
     font-size: 17px;
-    padding-top: 10%;
-    padding-bottom: 10%;
   }
 }
 
 .main-nav__item--catalog {
   @media (min-width: $screen-tablet) {
     font-size: 15px;
+    padding: 0;
   }
 
   @media (min-width: $screen-desktop) {
@@ -236,14 +275,32 @@
 .main-nav__item--to-order {
   @media (min-width: $screen-tablet) {
     font-size: 15px;
+    padding: 0;
   }
 
   @media (min-width: $screen-desktop) {
     font-size: 17px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    padding-left: 35px;
   }
 }
 
 .main-nav__item--free-shipping {
   font-size: 15px;
   font-weight: 400;
+  padding: 0;
+}
+
+.main-nav__item--sale {
+  @media (min-width: $screen-desktop) {
+    padding: 0;
+  }
+}
+
+.main-nav__item--new {
+  @media (min-width: $screen-desktop) {
+    padding: 0;
+  }
 }
