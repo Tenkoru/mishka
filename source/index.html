@@ -13,7 +13,11 @@
       <nav class="main-nav">
         <div class="main-nav__logo">
           <a class="main-nav__item main-nav__item--logo" href="index.html">
-            <img class="logo" src="img/mishka-logo-mobile.png" alt="Логотип">
+            <picture>
+              <source media="(min-width: 1250px)" srcset="img/mishka-logo-desktop.png 1x">
+              <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.png 1x">
+              <img class="logo" src="img/mishka-logo-mobile.png" alt="Логотип Мишка">
+            </picture>
           </a>
           <button type="button" class="page-header__menu-btn"></button>
         </div>

@@ -232,8 +232,9 @@
 }
 
 .main-nav__item--logo {
-  padding-top: 19px;
-  padding-bottom: 19px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  line-height: 0;
 
   &:hover {
     opacity: 1;
@@ -245,11 +246,13 @@
 
   @media (min-width: $screen-tablet) {
     text-align: left;
-    padding-top: 22px;
-    padding-bottom: 22px;
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
 
   @media (min-width: $screen-desktop) {
+    padding-top: 9px;
+    padding-bottom: 7px;
     text-align: center;
   }
 }
