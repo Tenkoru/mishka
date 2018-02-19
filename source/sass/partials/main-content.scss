@@ -4,6 +4,14 @@
   background-repeat: no-repeat;
   background-position: 50% 0;
   border-bottom: 7px solid red;
+
+  @media (min-width: $screen-mobile) {
+    background-image: url("../img/hero-tablet.jpg");
+  }
+
+  @media (min-width: $screen-desktop) {
+    background-image: url("../img/hero-desktop.jpg");
+  }
 }
 
 .main-content__header-container {
