@@ -7,6 +7,7 @@
   flex-direction: column;
   margin-top: 30px;
   padding-bottom: 35px;
+  justify-content: space-between;
 
   @media (min-width: $screen-tablet) {
     flex-direction: row;
@@ -17,6 +18,7 @@
 
   @media (min-width: $screen-desktop) {
     padding-bottom: 73px;
+    margin-top: 130px;
   }
 }
 .weekly-goods__selected-goods {
@@ -25,6 +27,7 @@
   font-weight: 700;
   color: $color-black;
   order: 5;
+  z-index: 1;
 
   @media (min-width: $screen-tablet) {
   width: 334px;
@@ -90,7 +93,6 @@
     width: 290px;
     margin-top: 55px;
     margin-left: 175px;
-    padding-right: 60px;
   }
 }
 
@@ -103,6 +105,7 @@
 
   @media (min-width: $screen-desktop) {
     flex-basis: 525px;
+    margin-top: -100px;
   }
 }
 
@@ -112,6 +115,11 @@
   @media (min-width: $screen-tablet) {
     flex-basis: 290px;
     margin-top: -115px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    margin-top: -122px;
+    margin-left: 175px;
   }
 }
 

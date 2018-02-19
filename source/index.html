@@ -80,7 +80,11 @@
             </tr>
           </table>
         </div>
-        <img class="weekly-goods__image" src="img/triple-set-mobile.jpg" width="260" height="315">
+        <picture class="weekly-goods__image">
+          <source media="(min-width: 1250px)" srcset="img/triple-set-desktop.jpg 1x">
+          <source media="(min-width: 768px)" srcset="img/triple-set-tablet.jpg 1x">
+          <img src="img/triple-set-mobile.jpg" alt="Товар недели">
+          </picture>
         <div class="weekly-goods__cost-and-buy">
           <span class="weekly-goods__cost">
             Цена: 990 руб.
