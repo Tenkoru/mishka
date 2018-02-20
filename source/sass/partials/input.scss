@@ -1,3 +1,47 @@
 .input--hidden {
   display: none;
 }
+
+.input:checked + .input-indicator--radio {
+  &::before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $color-lightTeal;
+  }
+}
+
+.input:checked + .input-indicator--checkbox {
+  &::before {
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(../img/checkbox.png);
+  }
+}
+
+.input-indicator {
+  position: absolute;
+  width: 36px;
+  height: 35px;
+  background-color: $color-white;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 2px solid
+}
+
+.input-indicator--radio {
+  border-radius: 50%;
+}
+
+

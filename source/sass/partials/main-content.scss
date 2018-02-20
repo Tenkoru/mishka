@@ -14,6 +14,11 @@
   }
 }
 
+.main-content__header--form {
+  background-image: none;
+  background-color: #f1f1f1;
+}
+
 .main-content__header-container {
   @media (min-width: $screen-mobile) {
     width: $screen-mobile;
@@ -30,8 +35,8 @@
 
 .main-content__title {
   width: 260px;
-  padding-top: 70px;
   margin: 0 auto;
+  padding-top: 75px;
   margin-bottom: 140px;
   text-align: center;
   font-weight: 700;
@@ -55,3 +60,14 @@
     line-height: 57px;
   }
 }
+
+.main-content__title--form {
+  margin-bottom: 80px;
+}
+
+.main-content__page-description {
+  margin-top: 27px;
+  margin-bottom: 27px;
+  font-size: 13px;
+}
+

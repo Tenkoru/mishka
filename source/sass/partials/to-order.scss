@@ -1,0 +1,58 @@
+.to-order-container {
+  display: block;
+  flex-direction: column;
+}
+
+.to-order__fieldset {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding: 0;
+  padding-bottom: 30px;
+  border: none;
+
+  &::before {
+  position: absolute;
+  display: block;
+  content: "";
+  height: 1px;
+  width: 200px;
+  background-color: $color-lightTeal;
+  top: 12px;
+  right: 0;
+  }
+}
+
+.to-order__legend {
+  font-weight: 700;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: $color-lightTeal;
+}
+
+.to-order__input {
+  font-size: 19px;
+  font-weight: 700;
+  margin-top: 22px;
+  margin-bottom: 22px;
+  position: relative;
+  color: $color-black;
+}
+
+.to-order__input--radio {
+  padding-left: 65px;
+}
+
+.to-order__input--checkbox {
+  padding-left: 65px;
+}
+
+.to-order__input--name {
+  font-size: 17px;
+  color: $color-black;
+}
+
+
+
+
+
