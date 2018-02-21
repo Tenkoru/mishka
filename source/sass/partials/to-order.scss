@@ -1,3 +1,7 @@
+.to-order {
+  padding-bottom: 55px;
+}
+
 .to-order-container {
   display: block;
   flex-direction: column;
@@ -30,7 +34,7 @@
   color: $color-lightTeal;
 }
 
-.to-order__input {
+.to-order__label {
   font-size: 19px;
   font-weight: 700;
   margin-top: 22px;
@@ -39,19 +43,31 @@
   color: $color-black;
 }
 
-.to-order__input--radio {
+.to-order__label--radio {
   padding-left: 65px;
 }
 
-.to-order__input--checkbox {
+.to-order__label--checkbox {
   padding-left: 65px;
 }
 
-.to-order__input--name {
+.to-order__label--name {
   font-size: 17px;
   color: $color-black;
 }
 
+.to-order__fieldset--optional-text-container {
+  padding: 0;
+}
+
+.to-order__hint {
+  display: block;
+  margin-top: 15px;
+}
+
+.to-order__button {
+  margin-top: 30px;
+}
 
 
 

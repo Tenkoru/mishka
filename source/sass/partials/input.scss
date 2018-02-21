@@ -20,12 +20,13 @@
   &::before {
     position: absolute;
     content: "";
-    width: 22px;
-    height: 16px;
+    width: 8px;
+    height: 20px;
+    border-right: 2px solid $color-black;
+    border-bottom: 2px solid $color-black;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    background-image: url(../img/checkbox.png);
+    transform: rotate(45deg) translate(-110%, -30%);
   }
 }
 
@@ -43,5 +44,51 @@
 .input-indicator--radio {
   border-radius: 50%;
 }
+
+.input--text {
+  width: 100%;
+  font-size: 17px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: none;
+  border-bottom: 2px solid $color-black;
+  color: $color-grey;
+
+  &::placeholder {
+    font-size: 17px;
+    color: $color-grey;
+    opacity: 0.3;
+  }
+
+  &:active {
+    border-bottom-color: $color-lightTeal;
+    outline: none;
+  }
+
+  &:focus {
+    border-bottom-color: $color-lightTeal;
+    outline: none;
+  }
+}
+
+.input--optional-text {
+  margin: 0;
+  margin-top: 22px;
+  padding: 15px;
+  border: 2px solid $color-black;
+
+  &:active {
+    border-color: $color-lightTeal;
+    outline: none;
+  }
+
+  &:focus {
+    border-color: $color-lightTeal;
+    outline: none;
+  }
+}
+
+
+
 
 
