@@ -62,19 +62,9 @@
 }
 
 .modal-cart__size {
-  display: block;
-  width: 78px;
-  font-size: 17px;
-  line-height: 16px;
-  font-weight: 700;
-  border: 2px solid #ececec;
-  padding-top: 16px;
-  padding-bottom: 16px;
-
-  @media (min-width: $screen-tablet) {
-    width: 108px;
-  }
-
+  width: 82px;
+  height: 52px;
+  content: "";
 }
 
 .modal-cart__submit {

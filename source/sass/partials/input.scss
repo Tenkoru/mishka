@@ -88,6 +88,24 @@
   }
 }
 
+.input-indicator--mobile-cart {
+  position: relative;
+  display: block;
+  width: 78px;
+  height: 16px;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  border: 2px solid #ececec;
+  transform: none;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @media (min-width: $screen-tablet) {
+    width: 108px;
+  }
+}
+
 
 
 
