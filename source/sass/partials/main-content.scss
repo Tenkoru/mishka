@@ -5,7 +5,7 @@
   background-position: 50% 0;
   border-bottom: 7px solid red;
 
-  @media (min-width: $screen-mobile) {
+  @media (min-width: $screen-tablet) {
     background-image: url("../img/hero-tablet.jpg");
   }
 
