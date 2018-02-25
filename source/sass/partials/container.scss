@@ -3,9 +3,7 @@
   margin-left: auto;
   margin-right: auto;
 
-  @media (min-width: $screen-mobile) {
-    width: $container-mobile;
-  }
+  width: $container-mobile;
 
   @media (min-width: $screen-tablet) {
     width: $container-tablet;
