@@ -17,8 +17,6 @@
 
 .page-header__menu-btn {
   border: none;
-  border-top: 2px solid #000000;
-  border-bottom: 2px solid #000000;
   background-color: $color-white;
   position: absolute;
   top: 50%;
@@ -34,8 +32,17 @@
     height: 2px;
     background-color: $color-black;
     left: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 0;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: $color-black;
+    left: 0;
+    bottom: 0;
   }
 
   &:focus {
@@ -45,6 +52,17 @@
   @media (min-width: $screen-tablet) {
     display: none;
   }
+}
+
+.page-header__menu-btn-element {
+  position: absolute;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: $color-black;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .page-header__menu {

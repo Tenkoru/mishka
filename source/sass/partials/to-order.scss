@@ -68,3 +68,9 @@
 .to-order__button {
   margin-top: 30px;
 }
+
+.to-order__group--bg-color {
+  @media (min-width: $screen-tablet) {
+    background-color: $color-lightGray;
+  }
+}

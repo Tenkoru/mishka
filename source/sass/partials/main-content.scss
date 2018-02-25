@@ -16,7 +16,7 @@
 
 .main-content__header--form {
   background-image: none;
-  background-color: #f1f1f1;
+  background-color: $color-lightGray;
 }
 
 .main-content__header-container {
@@ -61,10 +61,21 @@
 
 .main-content__title--form {
   margin-bottom: 80px;
+
+  @media (min-width: $screen-tablet) {
+    padding-top: 100px;
+    margin-bottom: 75px;
+  }
 }
 
 .main-content__page-description {
   margin-top: 27px;
   margin-bottom: 27px;
   font-size: 13px;
+
+  @media (min-width: $screen-tablet) {
+    font-size: 17px;
+    margin-top: 75px;
+    margin-bottom: 10px;
+  }
 }
