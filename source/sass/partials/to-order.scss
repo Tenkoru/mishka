@@ -25,6 +25,35 @@
   top: 12px;
   right: 0;
   }
+
+  @media (min-width: $screen-tablet) {
+    flex-direction: row;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.to-order__fieldset--tel {
+  padding-bottom: 0;
+}
+
+.to-order__fieldset--email {
+  padding-top: 0;
+}
+
+.to-order__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $screen-tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 75%;
+  }
 }
 
 .to-order__legend {
@@ -32,6 +61,11 @@
   font-size: 17px;
   text-transform: uppercase;
   color: $color-lightTeal;
+
+  @media (min-width: $screen-tablet) {
+    flex-basis: 25%;
+    padding-top: 20px;
+  }
 }
 
 .to-order__label {
@@ -41,6 +75,18 @@
   margin-bottom: 22px;
   position: relative;
   color: $color-black;
+}
+
+.to-order__label--type {
+  @media (min-width: $screen-tablet) {
+    flex-basis: 100%;
+  }
+}
+
+.to-order__label--color {
+  @media (min-width: $screen-tablet) {
+    flex-basis: 35%;
+  }
 }
 
 .to-order__label--radio {
@@ -54,19 +100,62 @@
 .to-order__label--name {
   font-size: 17px;
   color: $color-black;
+
+  @media (min-width: $screen-tablet) {
+    display: flex;
+    width: 100%;
+  }
 }
+
+.to-order__label--tel {
+  @media (min-width: $screen-tablet) {
+    display: flex;
+    width: 100%;
+  }
+}
+
+.to-order__label--email {
+  @media (min-width: $screen-tablet) {
+    display: flex;
+    width: 100%;
+  }
+}
+
 
 .to-order__fieldset--optional-text-container {
   padding: 0;
+
+  @media (min-width: $screen-tablet) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.to-order__hint-container {
+  @media (min-width: $screen-tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .to-order__hint {
   display: block;
   margin-top: 15px;
+
+  @media (min-width: $screen-tablet) {
+    order: 2;
+    margin-top: 0;
+  }
 }
 
 .to-order__button {
   margin-top: 30px;
+
+  @media (min-width: $screen-tablet) {
+    order: 1;
+    margin-top: 0;
+  }
 }
 
 .to-order__group--bg-color {

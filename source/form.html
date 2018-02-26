@@ -25,10 +25,10 @@
         </div>
         <ul class="main-nav__list">
           <li class="main-nav__list-container main-nav__list-container--catalog">
-            <a class="main-nav__item main-nav__item--catalog" href="#">Каталог товаров</a>
+            <a class="main-nav__item main-nav__item--catalog" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="main-nav__list-container main-nav__list-container--to-order">
-            <a class="main-nav__item main-nav__item--to-order" href="#">Вязание на заказ</a>
+            <a class="main-nav__item main-nav__item--to-order" href="form.html">Вязание на заказ</a>
           </li>
           <li class="main-nav__list-container main-nav__list-container--search">
             <a class="main-nav__item main-nav__item--search" href="#">Поиск по сайту</a>
@@ -64,92 +64,104 @@
         <div class="to-order__group">
           <div class="to-order__fieldset container">
             <legend class="to-order__legend">Тип</legend>
-            <label class="to-order__label to-order__label--radio">
-              Аксессуар для интерьера
-              <input class="input input--hidden" type="radio" name="type" value="interiorAccessory" checked>
-              <div class="input-indicator input-indicator--radio"></div>
-            </label>
-            <label class="to-order__label to-order__label--radio">
-              Детская игрушка
-              <input class="input input--hidden" type="radio" name="type" value="childToy">
-              <div class="input-indicator input-indicator--radio"></div>
-            </label>
+            <div class="to-order__wrapper">
+              <label class="to-order__label to-order__label--type to-order__label--radio">
+                Аксессуар для интерьера
+                <input class="input input--hidden" type="radio" name="type" value="interiorAccessory" checked>
+                <div class="input-indicator input-indicator--radio"></div>
+              </label>
+              <label class="to-order__label to-order__label--type to-order__label--radio">
+                Детская игрушка
+                <input class="input input--hidden" type="radio" name="type" value="childToy">
+                <div class="input-indicator input-indicator--radio"></div>
+              </label>
+            </div>
           </div>
         </div>
         <div class="to-order__group to-order__group--bg-color">
           <div class="to-order__fieldset container">
             <legend class="to-order__legend">Цвет</legend>
-            <label class="to-order__label to-order__label--checkbox">
-              Белый
-              <input class="input input--hidden" type="checkbox" name="white" checked>
-              <div class="input-indicator input-indicator--checkbox"></div>
-            </label>
-            <label class="to-order__label to-order__label--checkbox">
-              Серый
-              <input class="input input--hidden" type="checkbox" name="gray" checked>
-              <div class="input-indicator input-indicator--checkbox"></div>
-            </label>
-            <label class="to-order__label to-order__label--checkbox">
-              "Тиффани"
-              <input class="input input--hidden" type="checkbox" name="tiffany">
-              <div class="input-indicator input-indicator--checkbox"></div>
-            </label>
-            <label class="to-order__label to-order__label--checkbox">
-              Черный
-              <input class="input input--hidden" type="checkbox" name="black">
-              <div class="input-indicator input-indicator--checkbox"></div>
-            </label>
-            <label class="to-order__label to-order__label--checkbox">
-              Розовый
-              <input class="input input--hidden" type="checkbox" name="pink">
-              <div class="input-indicator input-indicator--checkbox"></div>
-            </label>
-            <label class="to-order__label to-order__label--checkbox">
-              Оранжевый
-              <input class="input input--hidden" type="checkbox" name="orange">
-              <div class="input-indicator input-indicator--checkbox"></div>
-            </label>
+            <div class="to-order__wrapper">
+              <label class="to-order__label to-order__label--color to-order__label--checkbox">
+                Белый
+                <input class="input input--hidden" type="checkbox" name="white" checked>
+                <div class="input-indicator input-indicator--checkbox"></div>
+              </label>
+              <label class="to-order__label to-order__label--color to-order__label--checkbox">
+                Серый
+                <input class="input input--hidden" type="checkbox" name="gray" checked>
+                <div class="input-indicator input-indicator--checkbox"></div>
+              </label>
+              <label class="to-order__label to-order__label--color to-order__label--checkbox">
+                "Тиффани"
+                <input class="input input--hidden" type="checkbox" name="tiffany">
+                <div class="input-indicator input-indicator--checkbox"></div>
+              </label>
+              <label class="to-order__label to-order__label--color to-order__label--checkbox">
+                Черный
+                <input class="input input--hidden" type="checkbox" name="black">
+                <div class="input-indicator input-indicator--checkbox"></div>
+              </label>
+              <label class="to-order__label to-order__label--color to-order__label--checkbox">
+                Розовый
+                <input class="input input--hidden" type="checkbox" name="pink">
+                <div class="input-indicator input-indicator--checkbox"></div>
+              </label>
+              <label class="to-order__label to-order__label--color to-order__label--checkbox">
+                Оранжевый
+                <input class="input input--hidden" type="checkbox" name="orange">
+                <div class="input-indicator input-indicator--checkbox"></div>
+              </label>
+            </div>
           </div>
         </div>
         <div class="to-order__group">
           <div class="to-order__fieldset container">
             <legend class="to-order__legend">Фио</legend>
-            <label class="to-order__label to-order__label--name">
-              Имя:
-              <input class="input input--text" type="text" name="name" placeholder="Введите ваше имя*">
-            </label>
-            <label class="to-order__label to-order__label--name">
-              Фамилия:
-              <input class="input input--text" type="text" name="last-name" placeholder="Укажите фамилию*">
-            </label>
-            <label class="to-order__label to-order__label--name">
-              Отчество:
-              <input class="input input--text" type="text" name="name" placeholder="Отчество, если желаете">
-            </label>
+            <div class="to-order__wrapper">
+              <label class="to-order__label to-order__label--name">
+                Имя:
+                <input class="input input--text" type="text" name="name" placeholder="Введите ваше имя*">
+              </label>
+              <label class="to-order__label to-order__label--name">
+                Фамилия:
+                <input class="input input--text" type="text" name="last-name" placeholder="Укажите фамилию*">
+              </label>
+              <label class="to-order__label to-order__label--name">
+                Отчество:
+                <input class="input input--text" type="text" name="name" placeholder="Отчество, если желаете">
+              </label>
+            </div>
           </div>
         </div>
         <div class="to-order__group to-order__group--bg-color">
-          <div class="to-order__fieldset container">
+          <div class="to-order__fieldset to-order__fieldset--tel container">
             <legend class="to-order__legend">Тел</legend>
-            <label class="to-order__label to-order__label--tel">
-              <input class="input input--text type="tel" name="tel" placeholder="+7 XXX XX XX*">
-            </label>
+            <div class="to-order__wrapper">
+              <label class="to-order__label to-order__label--tel">
+                <input class="input input--tel-email input--text" type="text" name="tel" placeholder="+7 XXX XX XX*">
+              </label>
+            </div>
           </div>
-          <div class="to-order__fieldset container">
+          <div class="to-order__fieldset to-order__fieldset--email container">
             <legend class="to-order__legend">E-mail</legend>
-            <label class="to-order__label to-order__label--email">
-              <input class="input input--text type="email" name="email" placeholder="Ваш Email*">
-            </label>
+            <div class="to-order__wrapper">
+              <label class="to-order__label to-order__label--email">
+                <input class="input input--tel-email input--text" type="text" name="email" placeholder="Ваш Email*">
+              </label>
+            </div>
           </div>
         </div>
         <div class="to-order__group">
           <div class="to-order__fieldset container to-order__fieldset--optional-text-container">
             <legend class="to-order__legend">Доп</legend>
-            <textarea class="input input--optional-text" name="optional-text" cols="25" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <div class="to-order__wrapper">
+              <textarea class="input input--optional-text" name="optional-text" cols="25" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </div>
           </div>
         </div>
         <div class="to-order__group">
-          <div class="container">
+          <div class="container to-order__hint-container">
             <span class="to-order__hint">*Поля обязательные для заполнения</span>
             <button class="to-order__button button " type="submit">Отправить заказ</button>
           </div>
