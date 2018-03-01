@@ -66,6 +66,10 @@
     padding-top: 100px;
     margin-bottom: 75px;
   }
+
+  @media (min-width: $screen-desktop) {
+    margin-bottom: 100px;
+  }
 }
 
 .main-content__page-description {
@@ -77,5 +81,11 @@
     font-size: 17px;
     margin-top: 75px;
     margin-bottom: 10px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    margin-top: 125px;
+    padding-left: 175px;
+    width: 700px;
   }
 }

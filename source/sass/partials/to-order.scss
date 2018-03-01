@@ -56,6 +56,30 @@
   }
 }
 
+.to-order__wrapper--name {
+  @media (min-width: $screen-tablet) {
+    flex-basis: 700px;
+  }
+}
+
+.to-order__wrapper--tel {
+  @media (min-width: $screen-tablet) {
+    flex-basis: 700px;
+  }
+}
+
+.to-order__wrapper--email {
+  @media (min-width: $screen-tablet) {
+    flex-basis: 700px;
+  }
+}
+
+.to-order__wrapper--optional-text {
+  @media (min-width: $screen-tablet) {
+    flex-basis: 700px;
+  }
+}
+
 .to-order__legend {
   font-weight: 700;
   font-size: 17px;
@@ -63,8 +87,13 @@
   color: $color-lightTeal;
 
   @media (min-width: $screen-tablet) {
-    flex-basis: 25%;
+    flex-basis: 167px;
     padding-top: 20px;
+  }
+
+  @media (min-width: $screen-tablet) {
+    flex-basis: 175px;
+    text-align: center;
   }
 }
 
@@ -85,16 +114,24 @@
 
 .to-order__label--color {
   @media (min-width: $screen-tablet) {
-    flex-basis: 35%;
+    flex-basis: 34%;
   }
 }
 
 .to-order__label--radio {
   padding-left: 65px;
+
+  @media (min-width: $screen-tablet) {
+    padding-left: 80px;
+  }
 }
 
 .to-order__label--checkbox {
   padding-left: 65px;
+
+  @media (min-width: $screen-tablet) {
+    padding-left: 80px;
+  }
 }
 
 .to-order__label--name {
@@ -146,6 +183,12 @@
   @media (min-width: $screen-tablet) {
     order: 2;
     margin-top: 0;
+  }
+}
+
+.to-order__hint-container {
+  @media (min-width: $screen-tablet) {
+    width: 700px;
   }
 }
 
