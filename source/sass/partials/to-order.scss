@@ -91,7 +91,7 @@
     padding-top: 20px;
   }
 
-  @media (min-width: $screen-tablet) {
+  @media (min-width: $screen-desktop) {
     flex-basis: 175px;
     text-align: center;
   }
@@ -120,6 +120,7 @@
 
 .to-order__label--radio {
   padding-left: 65px;
+  cursor: pointer;
 
   @media (min-width: $screen-tablet) {
     padding-left: 80px;
@@ -128,6 +129,7 @@
 
 .to-order__label--checkbox {
   padding-left: 65px;
+  cursor: pointer;
 
   @media (min-width: $screen-tablet) {
     padding-left: 80px;
