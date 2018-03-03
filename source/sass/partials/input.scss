@@ -154,3 +154,7 @@
     width: 108px;
   }
 }
+
+.input:checked + .input-indicator--mobile-cart {
+  border-color: $color-lightTeal;
+}

@@ -14,7 +14,7 @@
   }
 }
 
-.main-content__header--form {
+.main-content__header--sub-page {
   background-image: none;
   background-color: $color-lightGray;
 }
@@ -59,7 +59,7 @@
   }
 }
 
-.main-content__title--form {
+.main-content__title--sub-page {
   margin-bottom: 80px;
 
   @media (min-width: $screen-tablet) {

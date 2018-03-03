@@ -98,6 +98,7 @@
 
 .weekly-goods__image {
   order: 20;
+  line-height: 0;
 
   @media (min-width: $screen-tablet) {
     margin-top: 55px;
@@ -114,11 +115,10 @@
 
   @media (min-width: $screen-tablet) {
     flex-basis: 290px;
-    margin-top: -115px;
+    margin-top: -122px;
   }
 
   @media (min-width: $screen-desktop) {
-    margin-top: -125px;
     margin-left: 175px;
   }
 }

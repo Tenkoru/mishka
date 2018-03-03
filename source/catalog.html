@@ -19,14 +19,16 @@
               <img class="logo" src="img/mishka-logo-mobile.png" alt="Логотип Мишка">
             </picture>
           </a>
-          <button type="button" class="page-header__menu-btn"></button>
+          <button type="button" class="page-header__menu-btn">
+            <span class="page-header__menu-btn-element"></span>
+          </button>
         </div>
         <ul class="main-nav__list">
           <li class="main-nav__list-container main-nav__list-container--catalog">
-            <a class="main-nav__item main-nav__item--catalog" href="#">Каталог товаров</a>
+            <a class="main-nav__item main-nav__item--catalog" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="main-nav__list-container main-nav__list-container--to-order">
-            <a class="main-nav__item main-nav__item--to-order" href="#">Вязание на заказ</a>
+            <a class="main-nav__item main-nav__item--to-order" href="form.html">Вязание на заказ</a>
           </li>
           <li class="main-nav__list-container main-nav__list-container--search">
             <a class="main-nav__item main-nav__item--search" href="#">Поиск по сайту</a>
@@ -48,33 +50,54 @@
     </div>
   </header>
   <main class="main-content">
-    <section class="main-content__header">
-      <h1 class="main-content__title">Каталог товаров</h1>
+    <section class="main-content__header main-content__header--sub-page">
+      <h1 class="main-content__title main-content__title--sub-page">Каталог товаров</h1>
     </section>
     <section class="product-list">
-      <div class="product-list__item">
-        <img src="http://placehold.it/260x195"">
-        <div class="product-list__item-description">
-          <h3 class="product-list__item-name">Зайчик-попрыгайчик</h3>
-          <span class="product-list__item-parametrs">Рост 30 см, вес 200 г</span>
+      <div class="product-list__container container">
+        <div class="product-list__item">
+          <picture class="product-list__item-picture">
+            <source media="(min-width: 1250px)" srcset="img/photo-1-desktop.jpg 1x">
+            <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x">
+            <img src="img/photo-1-mobile.jpg" alt="Фото товара">
+          </picture>
+          <div class="product-list__item-description">
+            <div class="product-list__item-info">
+              <h3 class="product-list__item-name">Зайчик-попрыгайчик</h3>
+              <span class="product-list__item-parametrs">Рост 30 см, вес 200 г</span>
+            </div>
+            <div class="product-list__item-cost">1 200 руб.</div>
+          </div>
+
         </div>
-        <div class="product-list__item-cost">1 200 руб.</div>
-      </div>
-      <div class="product-list__item">
-        <img src="http://placehold.it/260x195"">
-        <div class="product-list__item-description">
-          <h3 class="product-list__item-name">Корзинка для белья</h3>
-          <span class="product-list__item-parametrs">Диаметр 15 см, высота 10 см</span>
+        <div class="product-list__item">
+          <picture class="product-list__item-picture">
+            <source media="(min-width: 1250px)" srcset="img/photo-2-desktop.jpg 1x">
+            <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x">
+            <img src="img/photo-2-mobile.jpg" alt="Фото товара">
+          </picture>
+          <div class="product-list__item-description">
+            <div class="product-list__item-info">
+              <h3 class="product-list__item-name">Корзинка для белья</h3>
+              <span class="product-list__item-parametrs">Диаметр 15 см, высота 10 см</span>
+            </div>
+            <div class="product-list__item-cost">690 руб.</div>
+          </div>
         </div>
-        <div class="product-list__item-cost">690 руб.</div>
-      </div>
-      <div class="product-list__item">
-        <img src="http://placehold.it/260x195"">
-        <div class="product-list__item-description">
-          <h3 class="product-list__item-name">Большая корзинка для игрушек</h3>
-          <span class="product-list__item-parametrs">Диаметр 30 см, высота 30 см</span>
+        <div class="product-list__item">
+          <picture class="product-list__item-picture">
+            <source media="(min-width: 1250px)" srcset="img/photo-3-desktop.jpg 1x">
+            <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x">
+            <img src="img/photo-3-mobile.jpg" alt="Фото товара">
+          </picture>
+          <div class="product-list__item-description">
+            <div class="product-list__item-info">
+              <h3 class="product-list__item-name">Большая корзинка для игрушек</h3>
+              <span class="product-list__item-parametrs">Диаметр 30 см, высота 30 см</span>
+            </div>
+            <div class="product-list__item-cost">1 500 руб.</div>
+          </div>
         </div>
-        <div class="product-list__item-cost">1 500 руб.</div>
       </div>
     </section>
     <section class="production-video">
@@ -85,31 +108,33 @@
       <a class="production-video__button button" href="#">Сделать заказ</a>
     </section>
     <section class="modal-cart">
-      <form class="modal-cart__form">
-        <h3 class="modal-cart__header">Добавить в корзину</h3>
-        <span class="modal-cart__list-header">Выберете размер:</span>
-        <ul class="modal-cart__list">
-          <li>
-            <label class="modal-cart__size">S
-              <input class="input input--hidden" type="radio" name="sizeS" checked>
-              <div class="input-indicator"></div>
-            </label>
-          </li>
-          <li>
-            <label class="modal-cart__size">M
-              <input class="input input--hidden" type="radio" name="sizeM">
-              <div class="input-indicator"></div>
-            </label>
-          </li>
-          <li>
-            <label class="modal-cart__size">L
-              <input class="input input--hidden" type="radio" name="sizeL">
-              <div class="input-indicator"></div>
-            </label>
-          </li>
-        </ul>
-        <button class="modal-cart__submit button" type="submit">Добавить</button>
-      </form>
+      <div class="modal-cart__container container">
+        <form class="modal-cart__form">
+          <h3 class="modal-cart__header">Добавить в корзину</h3>
+          <span class="modal-cart__list-header">Выберете размер:</span>
+          <ul class="modal-cart__list">
+            <li class="modal-cart__list-container">
+              <label class="modal-cart__size">
+                <input class="input input--hidden" type="radio" name="modal-cart-size" value="sizeS" checked>
+                <div class="input-indicator input-indicator--mobile-cart">S</div>
+              </label>
+            </li>
+            <li class="modal-cart__list-container">
+              <label class="modal-cart__size">
+                <input class="input input--hidden" type="radio" name="modal-cart-size" value="sizeM">
+                <div class="input-indicator input-indicator--mobile-cart">M</div>
+              </label>
+            </li>
+            <li class="modal-cart__list-container">
+              <label class="modal-cart__size">
+                <input class="input input--hidden" type="radio" name="modal-cart-size" value="sizeL">
+                <div class="input-indicator input-indicator--mobile-cart">L</div>
+              </label>
+            </li>
+          </ul>
+          <button class="modal-cart__submit button" type="submit">Добавить</button>
+        </form>
+      </div>
     </section>
   </main>
   <footer class="page-footer">
