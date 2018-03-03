@@ -1,0 +1,39 @@
+.production-video-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid  #ececec;
+}
+
+.production-video__header {
+  font-size: 17px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding-left: 90px;
+  padding-right: 30px;
+
+  @media (min-width: $screen-tablet) {
+    font-size: 20px;
+  }
+}
+
+.production-video__content {
+  line-height: 0;
+}
+
+.production-video__description {
+  margin-top: 32px;
+  margin-bottom: 28px;
+  padding-left: 35px;
+  padding-right: 35px;
+  font-size: 13px;
+
+  @media (min-width: $screen-tablet) {
+    margin-top: 38px;
+    margin-bottom: 38px;
+    font-size: 15px;
+  }
+
+  @media (min-width: $screen-tablet) {
+    margin-bottom: 50px;
+  }
+}

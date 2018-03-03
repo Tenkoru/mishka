@@ -101,11 +101,17 @@
       </div>
     </section>
     <section class="production-video">
-      <h2 class="production-video__header">Процесс производства</h2>
-      <iframe width=260" height="150" src="" frameborder="0" allowfullscreen></iframe>
-      <p class="production-video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-      </p>
-      <a class="production-video__button button" href="#">Сделать заказ</a>
+      <div class="production-video-container container">
+        <h2 class="production-video__header">Процесс производства</h2>
+        <picture class="production-video__content">
+          <source media="(min-width: 1250px)" srcset="img/video-desktop.jpg 1x">
+          <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x">
+          <img src="img/video-mobile.jpg" alt="Видео изготовления товара">
+        </picture>
+        <p class="production-video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+        </p>
+        <a class="production-video__button button" href="#">Сделать заказ</a>
+      </div>
     </section>
     <section class="modal-cart">
       <div class="modal-cart__container container">
