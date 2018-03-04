@@ -4,7 +4,7 @@
 }
 
 .page-header__container {
-  width: auto;
+    width: $screen-mobile;
 
   @media (min-width: $screen-tablet) {
     width: $container-tablet;

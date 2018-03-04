@@ -6,54 +6,14 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>HTML Academy: Мишка</title>
   <link href="css/style.min.css" rel="stylesheet">
-  <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/OpenSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 <div style="display: none">
   <include src="build/img/sprite.svg"></include>
 </div>
 <body class="body">
-  <header class="page-header">
-    <div class="page-header__container container">
-      <nav class="main-nav">
-        <div class="main-nav__logo">
-          <a class="main-nav__item main-nav__item--logo" href="index.html">
-            <picture>
-              <source media="(min-width: 1250px)" srcset="img/mishka-logo-desktop.png 1x">
-              <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.png 1x">
-              <img class="logo" src="img/mishka-logo-mobile.png" alt="Логотип Мишка">
-            </picture>
-          </a>
-          <button type="button" class="page-header__menu-btn">
-            <span class="page-header__menu-btn-element"></span>
-          </button>
-        </div>
-        <ul class="main-nav__list">
-          <li class="main-nav__list-container main-nav__list-container--catalog">
-            <a class="main-nav__item main-nav__item--catalog" href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="main-nav__list-container main-nav__list-container--to-order">
-            <a class="main-nav__item main-nav__item--to-order" href="form.html">Вязание на заказ</a>
-          </li>
-          <li class="main-nav__list-container main-nav__list-container--search">
-            <a class="main-nav__item main-nav__item--search" href="#">Поиск по сайту</a>
-          </li>
-          <li class="main-nav__list-container main-nav__list-container--cart">
-            <a class="main-nav__item main-nav__item--cart" href="#">Корзина: <span class="main-nav__cart-content">Пока пуста</span></a>
-          </li>
-          <li class="main-nav__list-container main-nav__list-container--new">
-            <a class="main-nav__item main-nav__item--new" href="#">Новые поступления</a>
-          </li>
-          <li class="main-nav__list-container main-nav__list-container--sale">
-            <a class="main-nav__item main-nav__item--sale" href="#">Распродажа</a>
-          </li>
-          <li class="main-nav__list-container main-nav__list-container--free-shipping">
-            <a class="main-nav__item main-nav__item--free-shipping" href="#">Бесплатная доставка по России</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<include src="html_modules/header.html"></include>
   <main class="main-content">
     <section class="main-content__header">
       <div class="main-content__header-container container">
@@ -186,28 +146,6 @@
       </div>
     </section>
   </main>
-  <footer class="page-footer">
-    <div class="page-footer__container container">
-      <a class="page-footer__logo" href="index.html">
-        <img src="img/logo-footer.png">
-      </a>
-      <div class="social">
-        <ul class="social__list">
-          <li>
-            <a class="social__button social__button--instagram" href="#"></a>
-          </li>
-          <li>
-            <a class="social__button social__button--facebook" href="#"></a>
-          </li>
-          <li>
-            <a class="social__button social__button--twitter" href="#"></a>
-          </li>
-        </ul>
-      </div>
-      <div class="copyrights">
-        <a class="copyrights__cite" href="https://htmlacademy.ru/">Разработано</a>
-      </div>
-    </div>
-  </footer>
+  <include src="html_modules/footer.html"></include>
 </body>
 </html>
