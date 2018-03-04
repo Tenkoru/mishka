@@ -16,7 +16,7 @@
   <include src="html_modules/header.html"></include>
   <main class="main-content">
     <section class="main-content__header main-content__header--sub-page">
-      <div class="main-content__header-container container">
+      <div class="main-content__header-container main-content__header-container--sub-page container">
         <h1 class="main-content__title main-content__title--sub-page">Вязание на заказ</h1>
       </div>
     </section>
@@ -105,6 +105,9 @@
             <div class="to-order__wrapper to-order__wrapper--tel">
               <label class="to-order__label to-order__label--tel">
                 <input class="input input--tel-email input--text" type="text" name="tel" placeholder="+7 XXX XX XX*">
+                <svg class="to-order__label-icon" width="25" height="24">
+                  <use xlink:href="#icon-phone"></use>
+                </svg>
               </label>
             </div>
           </div>
@@ -113,6 +116,9 @@
             <div class="to-order__wrapper to-order__wrapper--email">
               <label class="to-order__label to-order__label--email">
                 <input class="input input--tel-email input--text" type="text" name="email" placeholder="Ваш Email*">
+                <svg class="to-order__label-icon" width="32" height="25">
+                  <use xlink:href="#icon-mail"></use>
+                </svg>
               </label>
             </div>
           </div>

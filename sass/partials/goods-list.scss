@@ -2,6 +2,7 @@
   @include simple-list;
   display: flex;
   flex-direction: column;
+  position: relative;
 
   @media (min-width: $screen-tablet) {
     flex-direction: row;
@@ -9,22 +10,20 @@
 }
 
 .goods-list__item {
-  padding: 30px;
-  font-size: 19px;
-  font-weight: 700;
-  line-height: 24px;
-  color: $color-white;
   position: relative;
 
-  &::before {
-    position: absolute;
-    content: "";
-    width: 60px;
-    height: 60px;
-    background-color: red;
-    right: 30px;
-    top: 50%;
-    transform: translateY(-50%);
+  &:hover {
+    transition: .3s;
+    position: relative;
+    margin-top: -5px;
+  }
+
+  &:hover .goods-list__icon--interior {
+    fill: #29a592;
+  }
+
+  &:hover .goods-list__icon--toys {
+    fill: #239f8e;
   }
 
   @media (min-width: $screen-tablet) {
@@ -34,10 +33,54 @@
   }
 }
 
+.goods-list__link {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 30px;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $color-white;
+  text-decoration: none;
+
+  &:active .goods-list__text{
+    opacity: 0.3;
+  }
+
+  @media (min-width: $screen-tablet) {
+    padding-top: 34px;
+    padding-bottom: 45px;
+  }
+}
+
+.goods-list__icon {
+  position: absolute;
+  top: 30px;
+  right: 35px;
+}
+
+.goods-list__icon--interior {
+  fill: #3bb09d;
+}
+
+.goods-list__icon--toys {
+  fill: #35a999;
+}
+
 .goods-list__item--interior {
   background-color: $color-lightTeal;
+
+  &:hover {
+    background-color: #59d5bc;
+  }
+
 }
 
 .goods-list__item--toys {
-  background-color: $color-teal
+  background-color: $color-teal;
+
+  &:hover {
+    background-color: #46c1ae;
+  }
 }

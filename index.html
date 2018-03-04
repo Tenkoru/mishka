@@ -19,8 +19,22 @@
       <div class="main-content__header-container container">
         <h1 class="main-content__title">Милые штуки ручной работы для дома</h1>
         <ul class="goods-list">
-          <li class="goods-list__item goods-list__item--interior">Предметы<br> интерьера</li>
-          <li class="goods-list__item goods-list__item--toys">Детские<br> игрушки</li>
+          <li class="goods-list__item goods-list__item--interior">
+            <a class="goods-list__link" href="#">
+              <span class="goods-list__text">Предметы<br> интерьера</span>
+              <svg class="goods-list__icon goods-list__icon--interior" width="40" height="60">
+                <use xlink:href="#icon-interior"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="goods-list__item goods-list__item--toys">
+            <a class="goods-list__link" href="#">
+              <span class="goods-list__text">Детские<br> игрушки</span>
+              <svg class="goods-list__icon goods-list__icon--toys" width="60" height="60">
+                <use xlink:href="#icon-toy"></use>
+              </svg>
+            </a>
+          </li>
         </ul>
       </div>
     </section>
@@ -64,14 +78,39 @@
       <div class="advantages__container container">
         <h2 class="advantages__header">Коротко о нас:</h2>
         <ul class="advantages__list advantages__list--left">
-          <li class="advantages__item">Экологически чистые материалы</li>
-          <li class="advantages__item">Скандинавский стиль по российской цене</li>
-          <li class="advantages__item">Увеличивает лайки на фотографиях</li>
+          <li class="advantages__item">
+            <svg class="advantages__icon" width="55" height="38">
+              <use xlink:href="#icon-feature-flower"></use>
+            </svg>
+            <span class="advantages__text">Экологически чистые материалы</span>
+          </li>
+          <li class="advantages__item">
+            <svg class="advantages__icon" width="55" height="38">
+              <use xlink:href="#icon-feature-money"></use>
+            </svg>
+          <span class="advantages__text">Скандинавский стиль по российской цене</span></li>
+          <li class="advantages__item">
+            <svg class="advantages__icon" width="55" height="38">
+              <use xlink:href="#icon-feature-heart"></use>
+            </svg>
+          <span class="advantages__text">Увеличивает лайки на фотографиях</span></li>
         </ul>
         <ul class="advantages__list advantages__list--right">
-          <li class="advantages__item">Связано вручную с любовью и умилением</li>
-          <li class="advantages__item">Поддержка отечественного производителя</li>
-          <li class="advantages__item">Поставляется в подарочной упаковке</li>
+          <li class="advantages__item">
+            <svg class="advantages__icon" width="55" height="38">
+              <use xlink:href="#icon-feature-ball"></use>
+            </svg>
+          <span class="advantages__text">Связано вручную с любовью и умилением</span></li>
+          <li class="advantages__item">
+            <svg class="advantages__icon" width="55" height="38">
+              <use xlink:href="#icon-feature-rocket"></use>
+            </svg>
+          <span class="advantages__text">Поддержка отечественного производителя</span></li>
+          <li class="advantages__item">
+            <svg class="advantages__icon" width="55" height="38">
+              <use xlink:href="#icon-feature-gift"></use>
+            </svg>
+          <span class="advantages__text">Поставляется в подарочной упаковке</span></li>
         </ul>
       </div>
     </section>
@@ -86,8 +125,16 @@
             <span class="feedback__email">@misssssiskras</span>
           </address>
           <div class="slider__buttons">
-            <button type="button" class="slider__button slider__button-left"></button>
-            <button type="button" class="slider__button slider__button-right"></button>
+            <button type="button" class="slider__button slider__button-left">
+              <svg class="slider__button-icon" width="50" height="26">
+                <use xlink:href="#icon-left-arrow"></use>
+              </svg>
+            </button>
+            <button type="button" class="slider__button slider__button-right">
+              <svg class="slider__button-icon" width="50" height="26">
+                <use xlink:href="#icon-right-arrow"></use>
+              </svg>
+            </button>
           </div>
         </article>
 
@@ -112,8 +159,14 @@
             </div>
           </div>
         </div>
-        <div class="map"></div>
+        <div class="map">
+          <iframe class="map__content" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAlxOwCml72mPBhF21Djkw3Ujgvjn6_pNo&q=большая+Конюшенная,19" allowfullscreen>
+          </iframe>
+        </div>
         <a class="contacts__button button" href="#">Напишите нам</a>
+        <svg class="contacts__flag-icon" width="50" height="81";>
+          <use xlink:href="#icon-flag"></use>
+        </svg>
       </div>
     </section>
     <section class="modal-cart">

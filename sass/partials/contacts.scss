@@ -8,24 +8,6 @@
     padding-top: 65px;
   }
 
-  &::before {
-    @media (min-width: $screen-tablet) {
-      position: absolute;
-      display: block;
-      content: "";
-      width: 50px;
-      height: 81px;
-      background-color: red;
-      right: 0;
-      top: 45px;
-    }
-
-    @media (min-width: $screen-desktop) {
-      left: 63px;
-      top: 133px;
-    }
-  }
-
   @media (min-width: $screen-desktop) {
     width: 875px;
     padding-left: 175px;
@@ -33,6 +15,22 @@
     padding-bottom: 105px;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+}
+
+.contacts__flag-icon {
+  position: absolute;
+  display: none;
+
+  @media (min-width: $screen-tablet) {
+    display: block;
+    right: 0;
+    top: 45px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    left: 63px;
+    top: 133px;
   }
 }
 
@@ -79,6 +77,14 @@
   color: $color-gray;
   text-decoration: none;
   border-bottom: 1px solid $color-lightTeal;
+
+  &:hover {
+    color: $color-lightTeal;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .contacts__button {

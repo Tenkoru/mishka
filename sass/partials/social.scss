@@ -4,13 +4,27 @@
   padding-right: 59px;
   padding-bottom: 27px;
   padding-left: 59px;
-  background-color: red;
 
   @media (min-width: $screen-tablet) {
     padding: 0;
+    border: none;
   }
 }
 
 .social__list {
   @include simple-list;
+  display: flex;
+  width: 140px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social__icon {
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

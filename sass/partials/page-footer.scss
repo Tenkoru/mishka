@@ -8,13 +8,25 @@
 
   @media (min-width: $screen-tablet) {
     flex-direction: row;
-    padding-top: 50px;
+    padding-top: 51px;
+    padding-bottom: 58px;
     justify-content: space-between;
+    align-items: center;
   }
 }
 
 .page-footer__logo {
   @media (max-width: $screen-tablet) {
     display: none;
+  }
+}
+
+.page-footer__logo-icon {
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

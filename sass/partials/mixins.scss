@@ -4,14 +4,3 @@
   list-style: none;
 }
 
-@mixin icon {
-  &:hover {
-    opacity: 1;
-    fill: $color-lightTeal;
-  }
-
-  &:active {
-    fill: $color-lightTeal;
-    opacity: 0.3;
-  }
-}

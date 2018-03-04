@@ -14,4 +14,14 @@
   text-decoration: none;
   text-align: center;
   cursor: pointer;
+
+  &:hover {
+    transition: .3s;
+    background-color: $color-gray;
+    color: $color-white;
+  }
+
+  &:active {
+    color: #8d8d8d;
+  }
 }

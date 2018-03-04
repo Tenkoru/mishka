@@ -127,6 +127,23 @@
   }
 }
 
+.to-order__label--radio:hover .input-indicator {
+  border-color: $color-lightTeal;
+}
+
+.to-order__label--radio:active .input-indicator {
+  border-color: #c7c7c7;
+}
+
+.to-order__label--checkbox:hover .input-indicator {
+  border-color: $color-lightTeal;
+}
+
+.to-order__label--checkbox:active .input-indicator {
+  border-color: #c7c7c7;
+}
+
+
 .to-order__label--checkbox {
   padding-left: 65px;
   cursor: pointer;
@@ -137,6 +154,7 @@
 }
 
 .to-order__label--name {
+  position: relative;
   font-size: 17px;
   color: $color-black;
 
@@ -147,6 +165,7 @@
 }
 
 .to-order__label--tel {
+  position: relative;
   @media (min-width: $screen-tablet) {
     display: flex;
     width: 100%;
@@ -160,6 +179,18 @@
   }
 }
 
+.to-order__label-icon {
+  position: absolute;
+  right: 5px;
+  fill: #cccccc;
+  top: 50%;
+  transform: translateY(-50%);
+
+  @media (min-width: $screen-tablet) {
+    top: 0;
+    transform: none;
+  }
+}
 
 .to-order__fieldset--optional-text-container {
   padding: 0;

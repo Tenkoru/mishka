@@ -81,14 +81,22 @@
     opacity: 0.3;
   }
 
-  &:active {
+  &:hover {
     border-bottom-color: $color-lightTeal;
     outline: none;
+
+    & + .to-order__label-icon {
+      fill: $color-lightTeal;
+    }
   }
 
   &:focus {
     border-bottom-color: $color-lightTeal;
     outline: none;
+
+    & + .to-order__label-icon {
+      fill: $color-lightTeal;
+    }
   }
 
   @media (min-width: $screen-tablet) {
@@ -110,7 +118,7 @@
   padding: 15px;
   border: 2px solid $color-black;
 
-  &:active {
+  &:hover {
     border-color: $color-lightTeal;
     outline: none;
   }
@@ -149,6 +157,10 @@
   padding-top: 16px;
   padding-bottom: 16px;
   cursor: pointer;
+
+  &:hover {
+    border-color: #c7c7c7;
+  }
 
   @media (min-width: $screen-tablet) {
     width: 108px;

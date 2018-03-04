@@ -1,12 +1,25 @@
 .map {
+  margin-left: -30px;
+
+  @media (min-width: $screen-tablet) {
+    margin-left: -50px;
+    order: 20;
+  }
+
+  @media (min-width: $screen-desktop) {
+    margin-left: 0;
+  }
+}
+
+.map__content {
   height: 460px;
-  background-color: #000;
-  background-image: url("../img/map-demo.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 0;
+  width: 320px;
+
+  @media (min-width: $screen-tablet) {
+    width: 768px;
+  }
 
   @media (min-width: $screen-desktop) {
     width: 525px;
-    order: 20;
   }
 }

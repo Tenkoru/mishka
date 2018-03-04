@@ -55,20 +55,15 @@
   color: $color-black;
   margin-top: 20px;
   margin-bottom: 20px;
-  padding-top: 55px;
   position: relative;
-
-  &::before {
-    position: absolute;
-    content: "";
-    width: 60px;
-    height: 40px;
-    background-color: red;
-    top: 0;
-  }
 
   @media (min-width: $screen-tablet) {
     font-size: 20px;
     line-height: 22px;
   }
+}
+
+.advantages__text {
+  display: block;
+  margin-top: 19px;
 }

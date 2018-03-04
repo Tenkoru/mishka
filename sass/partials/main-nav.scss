@@ -22,14 +22,13 @@
   width: 100%;
   top: 100%;
   z-index: 100;
-  //display: none;
+  display: none;
 
   @media (min-width: $screen-tablet) {
     display: flex;
     position: relative;
     justify-content: space-between;
     flex-basis: 325px;
-    z-index: 0;
   }
 
   @media (min-width: $screen-desktop) {
@@ -138,6 +137,7 @@
 
 .main-nav__list-container--catalog {
   order: 4;
+
   @media (min-width: $screen-tablet) {
     position: absolute;
     bottom: -50%;

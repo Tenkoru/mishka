@@ -1,23 +1,42 @@
 .weekly-goods {
-  border-bottom: 7px solid red;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/zigzag-line-mobile.png");
+    height: 7px;
+    width: 100%;
+    bottom: 0;
+
+    @media (min-width: $screen-tablet) {
+      background-image: url("../img/zigzag-line-tablet.png");
+      height: 17px;
+    }
+
+    @media (min-width: $screen-tablet) {
+      background-image: url("../img/zigzag-line-desktop.png");
+      height: 23px;
+    }
+  }
 }
 
 .weekly-goods__container {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
-  padding-bottom: 35px;
+  padding-bottom: 40px;
   justify-content: space-between;
 
   @media (min-width: $screen-tablet) {
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 55px;
-    padding-bottom: 52px;
+    padding-bottom: 60px;
   }
 
   @media (min-width: $screen-desktop) {
-    padding-bottom: 73px;
+    padding-bottom: 80px;
     margin-top: 130px;
   }
 }

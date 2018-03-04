@@ -1,6 +1,7 @@
 .copyrights {
   padding-top: 22px;
   padding-bottom: 23px;
+  position: relative;
 
   @media (min-width: $screen-tablet) {
     padding: 0;
@@ -11,9 +12,35 @@
   display: block;
   color: $color-black;
   padding-left: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-size: 19px;
   line-height: 18px;
   font-weight: 700;
   text-align: left;
   text-decoration: none;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover .copyrights__icon {
+    fill: #46c1ae;
+  }
+
+  @media (min-width: $screen-tablet) {
+    padding-right: 55px;
+  }
+}
+
+.copyrights__icon {
+  position: absolute;
+  right: 39px;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: $color-lightTeal;
+
+  @media (min-width: $screen-tablet) {
+    right: 0;
+  }
 }
