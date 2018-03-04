@@ -1,7 +1,24 @@
+.production-video {
+  margin-bottom: 58px;
+
+  @media (min-width: $screen-tablet) {
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    margin-bottom: 105px;
+    flex-basis: 680px;
+  }
+}
+
 .production-video-container {
   display: flex;
   flex-direction: column;
   border: 1px solid  #ececec;
+
+  @media (min-width: $screen-desktop) {
+    position: relative;
+  }
 }
 
 .production-video__header {
@@ -12,28 +29,83 @@
   padding-right: 30px;
 
   @media (min-width: $screen-tablet) {
+    margin-top: 40px;
+    margin-bottom: 0;
+    padding-left: 105px;
     font-size: 20px;
+    order: 20;
+  }
+
+  @media (min-width: $screen-desktop) {
+    margin-top: 45px;
+    margin-right: 55px;
+    margin-left: 760px;
+    padding-top: 50px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
 .production-video__content {
   line-height: 0;
+
+  @media (min-width: $screen-tablet) {
+    order: 10;
+  }
+
+  @media (min-width: $screen-desktop) {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.production-video__content > img {
+  @media (min-width: $screen-tablet) {
+    width: $container-tablet;
+  }
 }
 
 .production-video__description {
   margin-top: 32px;
   margin-bottom: 28px;
-  padding-left: 35px;
-  padding-right: 35px;
+  margin-left: 33px;
+  margin-right: 33px;
   font-size: 13px;
+  line-height: 24px;
 
   @media (min-width: $screen-tablet) {
-    margin-top: 38px;
+    margin-top: 40px;
     margin-bottom: 38px;
     font-size: 15px;
+    line-height: 30px;
+    order: 30;
   }
 
-  @media (min-width: $screen-tablet) {
+  @media (min-width: $screen-desktop) {
     margin-bottom: 50px;
+    margin-top: 40px;
+    margin-right: 55px;
+    margin-left: 760px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.production-video__button {
+  margin-bottom: 32px;
+  margin-left: 33px;
+  margin-right: 33px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media (min-width: $screen-tablet) {
+    order: 40;
+  }
+
+  @media (min-width: $screen-desktop) {
+    margin-right: 58px;
+    margin-left: 760px;
+    margin-bottom: 54px;
   }
 }
