@@ -169,36 +169,10 @@
         </svg>
       </div>
     </section>
-    <section class="modal-cart">
-      <div class="modal-cart__container container">
-        <form class="modal-cart__form">
-          <h3 class="modal-cart__header">Добавить в корзину</h3>
-          <span class="modal-cart__list-header">Выберете размер:</span>
-          <ul class="modal-cart__list">
-            <li class="modal-cart__list-container">
-              <label class="modal-cart__size">
-                <input class="input input--hidden" type="radio" name="modal-cart-size" value="sizeS" checked>
-                <div class="input-indicator input-indicator--mobile-cart">S</div>
-              </label>
-            </li>
-            <li class="modal-cart__list-container">
-              <label class="modal-cart__size">
-                <input class="input input--hidden" type="radio" name="modal-cart-size" value="sizeM">
-                <div class="input-indicator input-indicator--mobile-cart">M</div>
-              </label>
-            </li>
-            <li class="modal-cart__list-container">
-              <label class="modal-cart__size">
-                <input class="input input--hidden" type="radio" name="modal-cart-size" value="sizeL">
-                <div class="input-indicator input-indicator--mobile-cart">L</div>
-              </label>
-            </li>
-          </ul>
-          <button class="modal-cart__submit button" type="submit">Добавить</button>
-        </form>
-      </div>
-    </section>
   </main>
   <include src="html_modules/footer.html"></include>
+  <section class="overlay-modal"></section>
+  <include src="html_modules/modal-cart.html"></include>
+  <script src="js/script.js"></script>
 </body>
 </html>

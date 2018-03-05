@@ -1,0 +1,13 @@
+.overlay-modal {
+  display: none;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, .7);
+  z-index: 90;
+}
+
+.overlay-modal--opened {
+  display: block;
+}

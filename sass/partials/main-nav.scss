@@ -37,6 +37,10 @@
   }
 }
 
+.main-nav__list--opened {
+  display: block;
+}
+
 .main-nav__logo {
   border-bottom: 1px solid #ececec;
   position: relative;

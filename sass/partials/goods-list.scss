@@ -31,6 +31,12 @@
     font-size: 20px;
     line-height: 30px;
   }
+
+  @media (max-width: $screen-tablet) {
+    &:hover {
+      margin-top: 0;
+    }
+  }
 }
 
 .goods-list__link {

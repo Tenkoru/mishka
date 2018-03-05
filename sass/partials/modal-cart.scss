@@ -1,14 +1,24 @@
 .modal-cart {
   display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
   width: $screen-mobile;
   border-top: 1px solid #c7c7c7;
   border-bottom: 1px solid #c7c7c7;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25);
+  background-color: $color-white;
+  transform: translate(-50%, -50%);
   margin: 0 auto;
+  z-index: 100;
 
   @media (min-width: $screen-tablet) {
     width: 566px;
   }
+}
+
+.modal-cart--opened {
+  display: block;
 }
 
 .modal-cart__container {
