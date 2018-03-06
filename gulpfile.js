@@ -21,7 +21,16 @@ gulp.task("style", function() {
     .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([
-      autoprefixer()
+      autoprefixer({browsers: [
+          "Android 2.3",
+          "Android >= 4",
+          "Chrome >= 20",
+          "Firefox >= 24",
+          "Explorer >= 10",
+          "iOS >= 6",
+          "Opera >= 11",
+          "Safari >= 4"
+          ]})
     ]))
     .pipe(gulp.dest("build/css"))
     .pipe(minify())
