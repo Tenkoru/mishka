@@ -32,6 +32,7 @@
   }
 
   @media (min-width: $screen-desktop) {
+    min-height: 88px;
     justify-content: normal;
     flex-basis: auto;
   }
