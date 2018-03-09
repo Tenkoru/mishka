@@ -98,6 +98,8 @@
   }
 
   @media (min-width: $screen-tablet) {
+    width: 155px;
+    order: 30;
     margin-top: 55px;
     margin-bottom: 55px;
   }
