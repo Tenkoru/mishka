@@ -45,4 +45,6 @@ function modalOverlayHandler(event) {
   }
 }
 
-modalCartHandler(weeklyGoodsButton);
+if (weeklyGoodsButton) {
+  modalCartHandler(weeklyGoodsButton);
+};
