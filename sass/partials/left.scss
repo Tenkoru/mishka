@@ -1,0 +1,26 @@
+.left {
+  position: fixed;
+  left: 20px;
+  top: 50%;
+  background-color: $color-black;
+}
+
+.left__list {
+  @include simple-list;
+}
+
+.left__item {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 10px;
+  background-color: #696969;
+  font-size: 0;
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.left__item--active {
+  background-color: #c7ff00;
+}

@@ -48,3 +48,52 @@ function modalOverlayHandler(event) {
 if (weeklyGoodsButton) {
   modalCartHandler(weeklyGoodsButton);
 };
+
+//leftBlock
+
+var leftBlock = mainContent.querySelector('.left');
+var leftButtons = [].slice.call(leftBlock.querySelectorAll('.left__item'));
+var contentBlocks = [].slice.call(document.querySelectorAll('.left__anchor'));
+var anchorsTop = contentBlocks.map(function (item) {
+  return item.getBoundingClientRect().top + window.pageYOffset;
+});
+
+var turnOffButtons = function () {
+  leftButtons.forEach(function (item) {
+    item.classList.remove('left__item--active');
+  });
+};
+
+var turnOnButtons = function (activeButton) {
+  var clickedButtonIndex = leftButtons.indexOf(activeButton);
+  leftButtons.forEach(function (item, index) {
+    if (index <= clickedButtonIndex) {
+      item.classList.add('left__item--active');
+    }
+  });
+};
+
+var leftButtonsHandler = function (activeButton) {
+  turnOffButtons();
+  turnOnButtons(activeButton);
+};
+
+var compareAnchors = function (yOffSet) {
+  anchorsTop.forEach(function (item, index) {
+    console.log(yOffSet)
+    if (item < yOffSet) {
+      leftButtonsHandler(leftButtons[index]);
+    }
+  });
+};
+
+leftBlock.addEventListener('click', function (event) {
+  var currentButton = event.target;
+  if (currentButton.classList.contains('left__item')) {
+    leftButtonsHandler(currentButton);
+  }
+});
+
+window.addEventListener('scroll', function () {
+  compareAnchors(window.pageYOffset + 100);
+})
