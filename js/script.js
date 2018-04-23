@@ -57,6 +57,7 @@ var contentBlocks = [].slice.call(document.querySelectorAll('.left__anchor'));
 var anchorsTop = contentBlocks.map(function (item) {
   return item.getBoundingClientRect().top + window.pageYOffset;
 });
+var timer;
 
 var turnOffButtons = function () {
   leftButtons.forEach(function (item) {
@@ -80,7 +81,6 @@ var leftButtonsHandler = function (activeButton) {
 
 var compareAnchors = function (yOffSet) {
   anchorsTop.forEach(function (item, index) {
-    console.log(yOffSet)
     if (item < yOffSet) {
       leftButtonsHandler(leftButtons[index]);
     }
@@ -95,5 +95,14 @@ leftBlock.addEventListener('click', function (event) {
 });
 
 window.addEventListener('scroll', function () {
-  compareAnchors(window.pageYOffset + 100);
-})
+  if (timer) {
+    window.clearTimeout(timer);
+  }
+
+  timer = window.setTimeout(function() {
+    compareAnchors(window.pageYOffset + 10);
+  }, 100);
+});
+
+
+
